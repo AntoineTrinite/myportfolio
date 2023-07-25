@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/myportfolio.git/static/css/main.96055d9e.css",
+    "main.js": "/myportfolio.git/static/js/main.c8f83cb6.js",
+    "static/media/Moi.jpg": "/myportfolio.git/static/media/Moi.747fa88e820e00911830.jpg",
+    "static/media/nina-p.webp": "/myportfolio.git/static/media/nina-p.8ae9907264cfb9b95643.webp",
+    "static/media/kasa.webp": "/myportfolio.git/static/media/kasa.63a2722ce94fa6a948c5.webp",
+    "static/media/mvg.webp": "/myportfolio.git/static/media/mvg.a71acf44c6bc66baee5b.webp",
+    "static/media/coffe.jpg": "/myportfolio.git/static/media/coffe.c30c1d8d6dd9d34119d5.jpg",
+    "static/media/Moi-sans-bg.png": "/myportfolio.git/static/media/Moi-sans-bg.157c98c34094cb70cbd5.png",
+    "static/media/groupo.webp": "/myportfolio.git/static/media/groupo.42c172cc8ad5cd648c59.webp",
+    "static/media/noise.png": "/myportfolio.git/static/media/noise.cb9413b2a8e33408ff14.png",
+    "index.html": "/myportfolio.git/index.html",
+    "main.96055d9e.css.map": "/myportfolio.git/static/css/main.96055d9e.css.map",
+    "main.c8f83cb6.js.map": "/myportfolio.git/static/js/main.c8f83cb6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96055d9e.css",
+    "static/js/main.c8f83cb6.js"
+  ]
+}
