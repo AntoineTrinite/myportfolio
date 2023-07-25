@@ -12,7 +12,7 @@
     font-size: var(--fs-xl);
     font-family: var(--ff-heading);
     text-decoration: underline;
-    text-decoration-color: #EAFF69;
+    text-decoration-color: #D8C67A;
     text-decoration-thickness: 4px;
 }
 .nav{
@@ -26,7 +26,7 @@
     list-style: none;
 }
 .link:hover{
-    color: #727c33;
+    color: #D8C67A;
     cursor: pointer;
 }
 .external-link{

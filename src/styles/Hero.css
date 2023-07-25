@@ -59,7 +59,7 @@
 }
 .underscore-title{
     text-decoration: underline;
-    text-decoration-color: #EAFF69;
+    text-decoration-color: #D8C67A;
     text-decoration-thickness: 4px;
 }
 .btn-group{
@@ -75,7 +75,7 @@
 }
 .btn-rs:hover {
     text-decoration: underline;
-    text-decoration-color: #EAFF69;
+    text-decoration-color: #D8C67A;
     text-decoration-thickness: 4px;
     cursor: pointer;
 }

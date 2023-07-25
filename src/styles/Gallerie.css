@@ -175,7 +175,7 @@
 
 @media(max-width:1200px) {
     .project-divider{
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 0em;
         justify-content: center;
         align-items: center;
@@ -191,11 +191,16 @@
     }
 }
 @media(max-width:800px) {
+    .active {
+        margin-bottom: 0em;
+        border-radius: 0;
+    }
     .project-title{
         margin: 2em 2em;
     }
     .project-divider{
         width: 100%;
+        margin-bottom: 10em;
     }
     .gallery-part {
         width: 100%;
@@ -228,8 +233,14 @@
       }
 }
 @media(max-width:550px) {
+    .card {
+        min-width: 400px;
+    }
     .project-title{
         margin: 2em 2em;
+    }
+    .project-divider{
+        gap: 1em;
     }
     .gallery-part {
         padding-bottom: 0em;
@@ -241,10 +252,8 @@
       }
     .description-part{
         width: auto;
-        
         display: flex;
         flex-direction: column;
-        /* a toucher plus tard - zone pour creer scroll bar*/
     }
     
 }
