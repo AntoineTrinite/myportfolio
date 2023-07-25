@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <>
-      <h3 className='title-h3'>Une offre, un projet, contactez-moi _/</h3>
+      <h3 className='title-h3'>Une offre ? Contactez-moi _/</h3>
       {isFormSubmitted && (
               <div className="confirmation-message">
                 Merci ! Votre message a été envoyé avec succès.
