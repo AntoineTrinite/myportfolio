@@ -49,4 +49,7 @@
         gap: 3em;
         padding: 0;
     }
+    .portable-none{
+        display: none;
+    }
 }

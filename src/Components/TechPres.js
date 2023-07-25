@@ -11,7 +11,7 @@ const TechPres = () => {
   };
   
     const handleDownload = () => {
-      const pdfFilePath = 'src/files/CV2023.pdf';
+      const pdfFilePath = './files/CV2023.pdf';
       
       const downloadLink = document.createElement('a');
       downloadLink.href = pdfFilePath;

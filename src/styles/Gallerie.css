@@ -232,7 +232,7 @@
         margin: 2em 2em;
     }
     .gallery-part {
-        display: none;
+        padding-bottom: 0em;
     }
     .site-card {
         width: 100%;

@@ -18,7 +18,7 @@ const Footer = () => {
             
             <div className="footer-group">
                 <ul className='footer-lists'>
-                    <li className='footer-li' onClick={handleScrollToMiddle}>Mes projets</li>
+                    <li className='footer-li portable-none' onClick={handleScrollToMiddle}>Mes projets</li>
                     
                     <a className='footer-link' href="https://www.linkedin.com/in/antoine-trinit%C3%A9-8a27a1159/"  target="_blank" rel="noreferrer"><li className='footer-li'>LinkedIn</li></a>
                 </ul>
