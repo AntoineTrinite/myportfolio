@@ -234,7 +234,7 @@
 }
 @media(max-width:550px) {
     .card {
-        min-width: 400px;
+        min-width: 300px;
     }
     .project-title{
         margin: 2em 2em;
