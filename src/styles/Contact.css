@@ -129,7 +129,7 @@ label{
       .title-h3{
         max-width: 1200px;
         margin: auto 2em;
-        font-size: var(--fs-xll);
+        font-size: var(--fs-ll);
         font-family: var(--ff-lato);
     }
     .input {
