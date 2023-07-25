@@ -1,0 +1,183 @@
+.bg-grid-2 {
+    position: absolute;
+    height: 50rem;
+    width: 80%;
+    margin: auto 0;
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right,rgb(0, 0, 0) 1px,transparent 1px),linear-gradient(to bottom,rgb(0, 0, 0) 1px,transparent 1px);
+    background-position: top center;
+    image-rendering: pixelated;
+    opacity: 0.1;
+    -webkit-mask-image: linear-gradient(to bottom,transparent,1%,rgb(0, 0, 0),70%,transparent);
+    mask-image: linear-gradient(to bottom,transparent,10%,rgb(0, 0, 0),90%,transparent);
+    z-index: -10;
+}
+
+.contact-form-all {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 3em auto 0 auto;
+    justify-content:space-around;
+}
+.title-h3{
+    max-width: 1200px;
+    margin: auto 7em;
+    font-size: var(--fs-xll);
+    font-family: var(--ff-lato);
+}
+.confirmation-message{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact-form-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+}
+#email, #nom, #message {
+    font-size: var(--fs-ll);
+    font-family: var(--ff-lato);
+}
+.input {
+    width: 600px;
+    height: 30px;
+    padding: 0.5em;
+}
+label{
+    font-size: var(--fs-ll);
+    font-family: var(--ff-heading);
+}
+#message {
+    width: 600px;
+    height: 300px;
+    padding: 0.5em;
+    resize: none;
+}
+.submit-button-container {
+    display: flex;
+    align-self: end;
+}
+#submit {
+    max-width: 150px;
+    cursor: pointer;
+    background-color: #F4F4F4;
+    color: #3C3C3C;
+    padding: 0.4em 1.2em;
+    border: 1px solid #3C3C3C;
+    font-size: var(--fs-ll-hero);
+    font-family: var(--ff-lato);
+    font-weight: bold;
+}
+#submit:hover{
+    background-color: #7c7c7c;
+    color: #F4F4F4;
+}
+#submit:active{
+    background-color: #3C3C3C;
+    color: #F4F4F4;
+}
+
+.img-coffee {
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 642px;
+    width: 443px;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 49px 23px 26px -4px rgba(0, 0, 0, 0.25);
+}
+.confirmation-message{
+    font-size: var(--fs-s);
+    font-family: var(--ff-lato);
+    color: green;
+    padding: 1rem 2rem;
+}
+
+@media(max-width: 1150px) {
+    .contact-form-all {
+        justify-content:center;
+    }
+    .img-coffee {
+        display: none;
+    }
+}
+
+@media(max-width: 750px){
+    .bg-grid-2 {
+        position: absolute;
+        height: 40rem;
+        width: 80%;
+        bottom: 0;
+        margin: auto 0;
+        background-size: 30px 30px;
+        background-image: linear-gradient(to right, rgb(0, 0, 0) 1px, transparent 1px),
+          linear-gradient(to bottom, rgb(0, 0, 0) 1px, transparent 1px);
+        background-position: top center;
+        image-rendering: pixelated;
+        opacity: 0.05;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, 1%, rgb(0, 0, 0), 70%, transparent);
+        mask-image: linear-gradient(to bottom, transparent, 10%, rgb(0, 0, 0), 90%, transparent);
+        z-index: -10;
+      }
+      .title-h3{
+        max-width: 1200px;
+        margin: auto 2em;
+        font-size: var(--fs-xll);
+        font-family: var(--ff-lato);
+    }
+    .input {
+        width: 350px;
+        height: 15px;
+        padding: 0.5em;
+    }
+    
+    #message {
+        width: 350px;
+        height: 150px;
+        padding: 0.5em;
+        resize: none;
+    }
+}
+@media(max-width: 450px){
+    .bg-grid-2 {
+        position: absolute;
+        height: 40rem;
+        width: 80%;
+        bottom: 0;
+        margin: auto 0;
+        background-size: 30px 30px;
+        background-image: linear-gradient(to right, rgb(0, 0, 0) 1px, transparent 1px),
+          linear-gradient(to bottom, rgb(0, 0, 0) 1px, transparent 1px);
+        background-position: top center;
+        image-rendering: pixelated;
+        opacity: 0.05;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, 1%, rgb(0, 0, 0), 70%, transparent);
+        mask-image: linear-gradient(to bottom, transparent, 10%, rgb(0, 0, 0), 90%, transparent);
+        z-index: -10;
+      }
+      .title-h3{
+        max-width: 1200px;
+        margin: auto 2em;
+        font-size: var(--fs-ll);
+        font-family: var(--ff-lato);
+    }
+    .input {
+        width: 280px;
+        height: 15px;
+        padding: 0.5em;
+    }
+    
+    #message {
+        width: 280px;
+        height: 150px;
+        padding: 0.5em;
+        resize: none;
+    }
+}

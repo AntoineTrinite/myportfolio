@@ -1,0 +1,119 @@
+.bg-grid {
+    position:absolute;
+    margin-top: 0;
+    height: 80rem;
+    width: 80%;
+    margin: 0 50%;
+    transform: translateX(-50%);
+    background-size: 30px 30px;
+    background-image: linear-gradient(to right,rgb(0, 0, 0) 1px,transparent 1px),linear-gradient(to bottom,rgb(0, 0, 0) 1px,transparent 1px);
+    background-position: top center;
+    image-rendering: pixelated;
+    opacity: 0.05;
+    -webkit-mask-image: linear-gradient(to bottom,transparent,1%,rgb(0, 0, 0),70%,transparent);
+    mask-image: linear-gradient(to bottom,transparent,10%,rgb(0, 0, 0),90%,transparent);
+    z-index: -10;
+}
+
+.separator {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: 5em auto 0 auto;
+    justify-content:space-around;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 5em;
+}
+
+.hello-span{
+    font-size: var(--fs-xl-hero);
+    font-weight: bold;
+}
+.dev-title{
+    font-size: var(--fs-xl-hero);
+    font-weight: normal;
+}
+.pres-sep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 737px;
+}
+.slogan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--ff-heading);
+    gap: 1em;
+}
+.intro-text {
+    margin: 2em 0;
+    max-width: 600px;
+    font-family: var(--ff-lato);
+    font-size: var(--fs-ll-hero);
+    line-height: 2;
+    text-align: center;
+    max-width: 50ch;
+}
+.underscore-title{
+    text-decoration: underline;
+    text-decoration-color: #EAFF69;
+    text-decoration-thickness: 4px;
+}
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.btn-rs{
+    padding: 1em 1.5em;
+    border: none;
+    background: none;
+    font-size: var(--fs-ll-hero);
+}
+.btn-rs:hover {
+    text-decoration: underline;
+    text-decoration-color: #EAFF69;
+    text-decoration-thickness: 4px;
+    cursor: pointer;
+}
+
+
+.img{
+    box-sizing: border-box;
+    object-fit: cover;
+    height: 542px;
+    width: 343px;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 49px 23px 26px -4px rgba(0, 0, 0, 0.25);
+}
+@media(max-width: 890px) {
+    .slogan {
+        flex-direction: column;
+        gap: 0em;
+    }
+    .btn-rs{
+        padding: 0.5em 1em;
+    }
+    .img{
+        box-shadow: 24px 12px 13px -2px rgba(0, 0, 0, 0.25);
+    }
+}
+@media (max-width: 770px) {
+    .bg-grid {
+        width: 100%;
+        height: 120rem;
+    }
+    .separator {
+        gap: 4em;
+        margin-bottom: 3em;
+        flex-direction: column;
+        align-items:center;
+    }
+    .dev-title{
+        text-align: center;
+    }
+}

@@ -1,0 +1,43 @@
+.noise {
+    background: rgb(54, 54, 54);
+    background-image: url(../img/noise.png);
+}
+footer {
+    object-fit: fill;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 170px;
+    margin-top: 15em;
+    color: #F4F4F4;
+    font-family: var(--ff-body);
+    font-size: var(--fs-s);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+.footer-group{
+    width: 1200px;
+    margin-left: auto 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.footer-lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.footer-li:hover{
+    color: #e4ee8e;
+    cursor: pointer;
+}
+.footer-link{
+    color: #F4F4F4;
+    text-decoration: none;
+}
+@media (max-width: 450px) {
+    .footer-group{
+        gap: 0.5em;
+    }
+}
