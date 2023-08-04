@@ -25,7 +25,7 @@ const Header = () => {
             <ul className='nav'>
                 <li className='link portable-none' onClick={handleScrollToMiddle}>Mes projets</li>
                 <a className='external-link' href="https://www.linkedin.com/in/antoine-trinit%C3%A9-8a27a1159/"  target="_blank" rel="noreferrer"><li className='link'>LinkedIn</li></a>
-                <li className='link' onClick={handleScrollToBottom}>Contact</li>
+                <li className='link contact-me' onClick={handleScrollToBottom}>Contactez-moi</li>
             </ul>
         </div>
     );

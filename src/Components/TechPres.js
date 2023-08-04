@@ -5,27 +5,36 @@ import MoiSansBg from '../img/Moi-sans-bg.png'
 
 const TechPres = () => {
   const [activeTab, setActiveTab] = useState('technology');
+  const [transitioning, setTransitioning] = useState(false);
+  const [transitioned, setTransitioned] = useState(false);
 
   const handleTabChange = (tab) => {
-    setActiveTab(tab);
+    setTransitioning(true);
+    setTimeout(() => {
+      setActiveTab(tab);
+      setTransitioned(true);
+      setTimeout(() => {
+        setTransitioning(false);
+      }, 5);
+    }, 250);
   };
-  
-    const handleDownload = () => {
-      const pdfFilePath = './files/CV2023.pdf';
-      
-      const downloadLink = document.createElement('a');
-      downloadLink.href = pdfFilePath;
-      downloadLink.download = 'cv_antoine_trinite.pdf'; 
-      downloadLink.click();
-    };
+
+  const handleDownload = () => {
+    const pdfFilePath = './files/CV2023.pdf';
+
+    const downloadLink = document.createElement('a');
+    downloadLink.href = pdfFilePath;
+    downloadLink.download = 'cv_antoine_trinite.pdf';
+    downloadLink.click();
+  };
 
   return (
-    <div className="tech-pres">
-      <div className="title-part">
-        <button
-          className={`title-tech-pres ${activeTab === 'technology' ? 'title-active' : ''}`}
-          onClick={() => handleTabChange('technology')}
-        >
+    <div className={`tech-pres ${transitioning ? 'transitioning' : ''}`}>
+    <div className="title-part">
+      <button
+        className={`title-tech-pres ${activeTab === 'technology' ? 'title-active' : ''}`}
+        onClick={() => handleTabChange('technology')}
+      >
           Technologies _/
         </button>
         <button

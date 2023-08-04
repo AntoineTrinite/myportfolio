@@ -20,11 +20,22 @@
     display: flex;
     flex-direction: row;
     margin: 5em auto 0 auto;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 5em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 0.5s ease-out 0.5s forwards;
 }
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .hello-span{
     font-size: var(--fs-xl-hero);
@@ -40,6 +51,16 @@
     align-items: center;
     justify-content: center;
     max-width: 737px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appearText 0.5s ease-out 0.7s forwards;
+}
+
+@keyframes appearText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .slogan {
     display: flex;
@@ -65,13 +86,14 @@
 .btn-group{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1em;
 }
 .btn-rs{
     padding: 1em 1.5em;
     border: none;
     background: none;
-    font-size: var(--fs-ll-hero);
+    font-size: var(--fs-xll-hero);
 }
 .btn-rs:hover {
     text-decoration: underline;
@@ -79,17 +101,53 @@
     text-decoration-thickness: 4px;
     cursor: pointer;
 }
+.p-hero-contact{
+    margin: 0;
+}
+.hero-contact {
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: #D8C67A;
+    padding: 0.1rem 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+    box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes tilt {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    40% { transform: translateX(-1px) rotate(-1deg) scale(1.01); }
+    60% { transform: translateX(1px) rotate(1deg) scale(0.99); }
+    80% { transform: translateX(-1px) rotate(-1deg); }
+}
+
+.hero-contact:hover {
+    color: rgb(24, 24, 24);
+    cursor: pointer;
+    animation: tilt 0.3s ease-in-out;
+}
 
 
-.img{
+.img-sep {
+    width: 343px;
+    height: 542px;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.img {
     box-sizing: border-box;
     object-fit: cover;
-    height: 542px;
-    width: 343px;
+    width: 100%;
+    height: 100%;
     border-radius: 3px;
     border: 1px solid black;
     box-shadow: 49px 23px 26px -4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-out;
 }
+
+
 @media(max-width: 890px) {
     .slogan {
         flex-direction: column;

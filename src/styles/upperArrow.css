@@ -1,0 +1,62 @@
+/* upperArrow.css */
+.upper-arrow {
+    position: fixed;
+    background-color: white;
+    padding: 1em;
+    padding-bottom: 0.2em;
+    z-index: 10;
+    border-radius: 3px;
+    border: 1px solid black;
+    color: black;
+    bottom: 25px;
+    right: 150px;
+    box-shadow: 4px 4px rgb(59, 59, 59);
+    font-weight: bold;
+    user-select: none;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .upper-arrow.visible {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .upper-arrow:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 4px 6px rgb(59, 59, 59);
+  }
+  
+  .upper-arrow:active {
+    color: white;
+    background-color: #D8C67A;
+    font-weight: bold;
+    transform: scale(0.98);
+  }
+  
+  .upper-text {
+    font-size: var(--fs-xll);
+    margin: 0;
+  }
+
+  @media(max-width: 900px) {
+    .upper-arrow {
+      padding: 1em;
+      padding-bottom: 0.2em;
+      bottom: 25px;
+      right: 100px;
+    }
+}
+
+@media(max-width: 600px) {
+  .upper-arrow {
+    padding: 1em;
+    padding-bottom: 0.2em;
+    bottom: 25px;
+    right: 50px;
+  }
+}
