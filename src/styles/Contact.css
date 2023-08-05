@@ -101,23 +101,23 @@
   #submit {
     max-width: 150px;
     cursor: pointer;
-    background-color: #F4F4F4;
-    color: #3C3C3C;
-    padding: 0.4em 1.2em;
+    background-color: #D8C67A;
+    color: #161616;
+    padding: 0.2em 1.5em;
     border: 1px solid #3C3C3C;
-    font-size: var(--fs-ll-hero);
+    font-size: var(--fs-l-hero);
     font-family: var(--ff-lato);
     font-weight: bold;
   }
   
   #submit:hover {
-    background-color: #7c7c7c;
-    color: #F4F4F4;
+    background-color: #f3de8a;
+    color: rgb(0, 0, 0);
   }
   
   #submit:active {
-    background-color: #3C3C3C;
-    color: #F4F4F4;
+    background-color: #b1a364;
+    transform: scale(0.95);
   }
   
   .img-coffee {

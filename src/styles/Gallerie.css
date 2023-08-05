@@ -21,6 +21,10 @@
     display: flex;
     flex-direction: column;
     /* a toucher plus tard - zone pour creer scroll bar*/
+}*
+.description-part .active {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .card {
     background: rgba(54, 54, 54, 0.87);
@@ -28,6 +32,9 @@
     color: #F4F4F4;
     padding: 1.5em;
     box-shadow: 20px 10px 10px -2px rgba(0, 0, 0, 0.25);
+}
+.card:hover{
+    cursor: pointer;
 }
 .card .description {
     display: none;
@@ -76,7 +83,7 @@
     cursor: default;
 }
 .tag-card:hover{
-    background-color: rgb(224, 247, 161);
+    background-color: #D8C67A;
     scale: 0.98;
 }
 .project-description{
@@ -95,11 +102,11 @@
 }
 .link-site:hover {
     text-decoration: underline;
-    color: rgb(224, 247, 161);
+    color: #D8C67A;
 }
 .link-site:active {
     text-decoration: underline;
-    color: rgb(129, 143, 92);
+    color: #b1a364;
 }
 
 .gallery-part {

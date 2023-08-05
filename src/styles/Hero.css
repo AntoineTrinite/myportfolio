@@ -127,7 +127,10 @@
     cursor: pointer;
     animation: tilt 0.3s ease-in-out;
 }
-
+.hero-contact:active{
+    background-color: #b1a364;
+    transform: scale(0.95);
+}
 
 .img-sep {
     width: 343px;

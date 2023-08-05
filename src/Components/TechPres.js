@@ -6,7 +6,7 @@ import MoiSansBg from '../img/Moi-sans-bg.png'
 const TechPres = () => {
   const [activeTab, setActiveTab] = useState('technology');
   const [transitioning, setTransitioning] = useState(false);
-  const [transitioned, setTransitioned] = useState(false);
+  const [, setTransitioned] = useState(false);
 
   const handleTabChange = (tab) => {
     setTransitioning(true);

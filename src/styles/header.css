@@ -57,6 +57,10 @@
     animation: tilt 0.3s ease-in-out;
     cursor: pointer;
 }
+.contact-me:active{
+    background-color: #b1a364;
+    transform: scale(0.95);
+}
 @media(max-width:600px) {
     .head {
         flex-direction: column;

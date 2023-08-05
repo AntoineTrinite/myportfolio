@@ -21,10 +21,10 @@ const Gallerie = () => {
         <div className="description-part">
 
           {/* Card 1 */}
-          <div className={`card ${activeCard === 0 ? 'active' : ''}`}>
+          <div className={`card ${activeCard === 0 ? 'active' : ''}`} onClick={() => toggleCard(0)}>
             <div className="title-head">
               <span className='project-title-name'>Kasa</span>
-              <div className='reducer' onClick={() => toggleCard(0)}>
+              <div className='reducer'>
                 {activeCard === 0 ? '-' : '+'}
               </div>
             </div>
@@ -47,10 +47,10 @@ const Gallerie = () => {
           </div>
 
           {/* Card 2 */}
-          <div className={`card ${activeCard === 1 ? 'active' : ''}`}>
+          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
             <div className="title-head">
               <span className='project-title-name'>Groupomania</span>
-              <div className='reducer' onClick={() => toggleCard(1)}>
+              <div className='reducer'>
                 {activeCard === 1 ? '-' : '+'}
               </div>
             </div>
@@ -74,10 +74,10 @@ const Gallerie = () => {
           </div>
 
           {/* Card 3 */}
-          <div className={`card ${activeCard === 2 ? 'active' : ''}`}>
+          <div className={`card ${activeCard === 2 ? 'active' : ''}`} onClick={() => toggleCard(2)}>
             <div className="title-head">
               <span className='project-title-name'>Nina Carducci</span>
-              <div className='reducer' onClick={() => toggleCard(2)}>
+              <div className='reducer'>
                 {activeCard === 2 ? '-' : '+'}
               </div>
             </div>
@@ -99,10 +99,10 @@ const Gallerie = () => {
           </div>
 
           {/* Card 4 */}
-          <div className={`card ${activeCard === 3 ? 'active' : ''}`}>
+          <div className={`card ${activeCard === 3 ? 'active' : ''}`} onClick={() => toggleCard(3)}>
             <div className="title-head">
               <span className='project-title-name'>Mon Vieux Grimoire</span>
-              <div className='reducer' onClick={() => toggleCard(3)}>
+              <div className='reducer'>
                 {activeCard === 3 ? '-' : '+'}
               </div>
             </div>
