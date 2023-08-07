@@ -19,10 +19,13 @@ const Upper = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  
+
   return (
-    <div className={`upper-arrow ${showArrow ? 'visible' : ''}`} onClick={scrollToTop}>
-      <p className='upper-text'>^</p>
-    </div>
+    
+      <div className={`upper-arrow ${showArrow ? 'visible' : ''}`} onClick={scrollToTop}>
+        <p className='upper-text'>^</p>
+      </div>
   );
 };
 
