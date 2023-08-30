@@ -1,23 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/TechPres.css';
 import '../img/noise.png';
 import MoiSansBg from '../img/Moi-sans-bg.png'
 
 const TechPres = () => {
-  const [activeTab, setActiveTab] = useState('technology');
-  const [transitioning, setTransitioning] = useState(false);
-  const [, setTransitioned] = useState(false);
-
-  const handleTabChange = (tab) => {
-    setTransitioning(true);
-    setTimeout(() => {
-      setActiveTab(tab);
-      setTransitioned(true);
-      setTimeout(() => {
-        setTransitioning(false);
-      }, 5);
-    }, 250);
-  };
 
   const handleDownload = () => {
     const pdfFilePath = './files/CV2023.pdf';
@@ -29,22 +15,8 @@ const TechPres = () => {
   };
 
   return (
-    <div className={`tech-pres ${transitioning ? 'transitioning' : ''}`}>
-    <div className="title-part">
-      <button
-        className={`title-tech-pres ${activeTab === 'technology' ? 'title-active' : ''}`}
-        onClick={() => handleTabChange('technology')}
-      >
-          Technologies _/
-        </button>
-        <button
-          className={`title-tech-pres ${activeTab === 'presentation' ? 'title-active' : ''}`}
-          onClick={() => handleTabChange('presentation')}
-        >
-          Présentation _/
-        </button>
-      </div>
-      {activeTab === 'technology' && (
+    <div className={`tech-pres`}>
+      <h3 className='project-title'>Technologies _/</h3>
         <div className="technology">
           <div className="tech-card noise">
             <span className="tech-card-title">Html/Css</span>
@@ -83,8 +55,8 @@ const TechPres = () => {
             </p>
           </div>
         </div>
-      )}
-      {activeTab === 'presentation' && (
+      
+      <h3 className='project-title'>Présentation _/</h3>
         <div className="presentation">
           <div className="pres-main noise">
             <div className="pres-first-part">
@@ -131,7 +103,6 @@ const TechPres = () => {
             <button className='button-download noise' onClick={handleDownload}>Télécharger mon CV</button>
           </div>
         </div>
-      )}
     </div>
   );
 };
