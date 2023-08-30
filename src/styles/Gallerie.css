@@ -20,8 +20,18 @@
     width: 400px;
     display: flex;
     flex-direction: column;
-    /* a toucher plus tard - zone pour creer scroll bar*/
-}*
+    animation: galFadeIn 2s ease-in-out forwards;
+}
+@keyframes desFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-20px, -20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
 .description-part .active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -116,7 +126,18 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    animation: galFadeIn 2s ease-in-out forwards;
 }
+@keyframes galFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(20px, 20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
 .site-card {
     width: 650px;
     min-height: 350px;

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../styles/Gallerie.css';
 import '../img/noise.png';
 import kasa from '../img/kasa.webp';
-import groupomania from '../img/groupo.webp';
 import nina from '../img/nina-p.webp';
 import mvg from '../img/mvg.webp';
 
@@ -46,35 +45,8 @@ const Gallerie = () => {
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
-            <div className="title-head">
-              <span className='project-title-name'>Groupomania</span>
-              <div className='reducer'>
-                {activeCard === 1 ? '-' : '+'}
-              </div>
-            </div>
-            <div className="description">
-              <div className="tags">
-                <div className="tag-card">React</div>
-                <div className="tag-card">HTML/CSS</div>
-                <div className="tag-card">JS</div>
-                <div className="tag-card">NodeJs</div>
-                <div className="tag-card">MySQL</div>
-              </div>
-              <p className="project-description">
-                [ Projet en cours ] - Ici la principale difficultée est qu'il faut imaginer la totalité de la structure du site web. Que ce soit du côté frontend ou backend. Je met ce projet ici parce que j'ai presque terminé le frontend.
-                {/* Rest of the card content */}
-              </p>
-              <div className="link-access">
-                <a className='link-site' href="https://github.com/AntoineTrinite/P9-Groupomania" target="_blank" rel="noreferrer">Code Github</a>
-                <a className='link-site' href="https://github.com/AntoineTrinite/P9-Groupomania" target="_blank" rel="noreferrer">Accéder au site</a>
-              </div>
-            </div>
-          </div>
-
           {/* Card 3 */}
-          <div className={`card ${activeCard === 2 ? 'active' : ''}`} onClick={() => toggleCard(2)}>
+          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
             <div className="title-head">
               <span className='project-title-name'>Nina Carducci</span>
               <div className='reducer'>
@@ -99,7 +71,7 @@ const Gallerie = () => {
           </div>
 
           {/* Card 4 */}
-          <div className={`card ${activeCard === 3 ? 'active' : ''}`} onClick={() => toggleCard(3)}>
+          <div className={`card ${activeCard === 2 ? 'active' : ''}`} onClick={() => toggleCard(2)}>
             <div className="title-head">
               <span className='project-title-name'>Mon Vieux Grimoire</span>
               <div className='reducer'>
@@ -130,16 +102,11 @@ const Gallerie = () => {
             
           </div>
           <div className={`site-card ${activeCard === 1 ? 'active' : ''}`}>
-            <span className='site-title'>Groupomania</span>
-            <a href="https://github.com/AntoineTrinite/P9-Groupomania" target="_blank" rel="noreferrer"><img className='site-img' src={groupomania} alt="groupomania website" /></a>
-            
-          </div>
-          <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
             <span className='site-title'>Nina Carducci</span>
             <a href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer"><img className='site-img' src={nina} alt="nina carducci website" /></a>
             
           </div>
-          <div className={`site-card ${activeCard === 3 ? 'active' : ''}`}>
+          <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
             <span className='site-title'>Mon Vieux Grimoire</span>
             <a href="https://github.com/AntoineTrinite/P7-Mon-Vieux-Grimoire" target="_blank" rel="noreferrer"><img className='site-img' src={mvg} alt="Mon Vieux Grimoire site" /></a>
             
