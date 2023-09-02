@@ -1,9 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
 import '../styles/Gallerie.css';
 import '../img/noise.png';
 import kasa from '../img/kasa.webp';
 import nina from '../img/nina-p.webp';
 import mvg from '../img/mvg.webp';
+import hubilearn from '../img/hubilearn.webp';
 
 const Gallerie = () => {
   const [activeCard, setActiveCard] = useState(0); // Set initial active card to 0
@@ -21,6 +23,29 @@ const Gallerie = () => {
 
           {/* Card 1 */}
           <div className={`card ${activeCard === 0 ? 'active' : ''}`} onClick={() => toggleCard(0)}>
+            <div className="title-head">
+              <span className='project-title-name'>HUBILEARN</span>
+              <div className='reducer'>
+                {activeCard === 0 ? '-' : '+'}
+              </div>
+            </div>
+            <div className="description">
+              <div className="tags">
+                <div className="tag-card">NextJs</div>
+                <div className="tag-card">OAuth</div>
+                <div className="tag-card">Prisma</div>
+                <div className="tag-card">Neon</div>
+              </div>
+              <p className="project-description">
+                En cours - Version 0.2<br/>
+                Création d'une plateforme d'apprentissage en ligne.<br/>
+                Mon but avec ce projet est de créer une plateforme d'apprentissage en ligne permettant d'uploader des cours, de faire des lives, de donner des exercices en ligne aux élèves sous diverses formes (mini-jeux, textes à trous, ide en ligne, ...).
+              </p>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
             <div className="title-head">
               <span className='project-title-name'>Kasa</span>
               <div className='reducer'>
@@ -46,7 +71,7 @@ const Gallerie = () => {
           </div>
 
           {/* Card 3 */}
-          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
+          <div className={`card ${activeCard === 2 ? 'active' : ''}`} onClick={() => toggleCard(2)}>
             <div className="title-head">
               <span className='project-title-name'>Nina Carducci</span>
               <div className='reducer'>
@@ -71,7 +96,7 @@ const Gallerie = () => {
           </div>
 
           {/* Card 4 */}
-          <div className={`card ${activeCard === 2 ? 'active' : ''}`} onClick={() => toggleCard(2)}>
+          <div className={`card ${activeCard === 3 ? 'active' : ''}`} onClick={() => toggleCard(3)}>
             <div className="title-head">
               <span className='project-title-name'>Mon Vieux Grimoire</span>
               <div className='reducer'>
@@ -98,18 +123,22 @@ const Gallerie = () => {
         <div className="gallery-part">
           <div className={`site-card ${activeCard === 0 ? 'active' : ''}`}>
             <span className='site-title'>Kasa</span>
-            <a href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
-            
+            <a href="#" target="_blank" rel="noreferrer"><img className='site-img' src={hubilearn} alt="Hubilearn website" /></a>
           </div>
+
           <div className={`site-card ${activeCard === 1 ? 'active' : ''}`}>
+            <span className='site-title'>Kasa</span>
+            <a href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
+          </div>
+
+          <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
             <span className='site-title'>Nina Carducci</span>
             <a href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer"><img className='site-img' src={nina} alt="nina carducci website" /></a>
-            
           </div>
-          <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
+
+          <div className={`site-card ${activeCard === 3 ? 'active' : ''}`}>
             <span className='site-title'>Mon Vieux Grimoire</span>
             <a href="https://github.com/AntoineTrinite/P7-Mon-Vieux-Grimoire" target="_blank" rel="noreferrer"><img className='site-img' src={mvg} alt="Mon Vieux Grimoire site" /></a>
-            
           </div>
         </div>
       </div>
