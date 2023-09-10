@@ -24,32 +24,9 @@ const Gallerie = () => {
           {/* Card 1 */}
           <div className={`card ${activeCard === 0 ? 'active' : ''}`} onClick={() => toggleCard(0)}>
             <div className="title-head">
-              <span className='project-title-name'>HUBILEARN</span>
-              <div className='reducer'>
-                {activeCard === 0 ? '-' : '+'}
-              </div>
-            </div>
-            <div className="description">
-              <div className="tags">
-                <div className="tag-card">NextJs</div>
-                <div className="tag-card">OAuth</div>
-                <div className="tag-card">Prisma</div>
-                <div className="tag-card">Neon</div>
-              </div>
-              <p className="project-description">
-                Work in progress - Version 0.2<br/>
-                Creation of an e-learning platform.<br/>
-                My aim with this project is to create an e-learning platform that will allow me to upload lessons, do lives, and give students online exercises in various forms (mini-games, fill-in-the-blank texts, online ide, etc.).
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
-            <div className="title-head">
               <span className='project-title-name'>Kasa</span>
               <div className='reducer'>
-                {activeCard === 1 ? '-' : '+'}
+                {activeCard === 0 ? '-' : '+'}
               </div>
             </div>
             <div className="description">
@@ -67,6 +44,29 @@ const Gallerie = () => {
                 <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Github code</a>
                 <a className='link-site' href="https://antoinetrinite.github.io/Kasa/" target="_blank" rel="noreferrer">Web site</a>
               </div>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className={`card ${activeCard === 1 ? 'active' : ''}`} onClick={() => toggleCard(1)}>
+            <div className="title-head">
+              <span className='project-title-name'>HUBILEARN</span>
+              <div className='reducer'>
+                {activeCard === 1 ? '-' : '+'}
+              </div>
+            </div>
+            <div className="description">
+              <div className="tags">
+                <div className="tag-card">NextJs</div>
+                <div className="tag-card">OAuth</div>
+                <div className="tag-card">Prisma</div>
+                <div className="tag-card">Neon</div>
+              </div>
+              <p className="project-description">
+                Work in progress - Version 0.2<br/>
+                Creation of an e-learning platform.<br/>
+                My aim with this project is to create an e-learning platform that will allow me to upload lessons, do lives, and give students online exercises in various forms (mini-games, fill-in-the-blank texts, online ide, etc.).
+              </p>
             </div>
           </div>
 
@@ -121,13 +121,13 @@ const Gallerie = () => {
 
         <div className="gallery-part">
           <div className={`site-card ${activeCard === 0 ? 'active' : ''}`}>
-            <span className='site-title'>HUBILEARN</span>
-            <img className='site-img' src={hubilearn} alt="Hubilearn website" />
+            <span className='site-title'>Kasa</span>
+            <a href="https://antoinetrinite.github.io/Kasa/" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
           </div>
 
           <div className={`site-card ${activeCard === 1 ? 'active' : ''}`}>
-            <span className='site-title'>Kasa</span>
-            <a href="https://antoinetrinite.github.io/Kasa/" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
+            <span className='site-title'>HUBILEARN</span>
+            <img className='site-img' src={hubilearn} alt="Hubilearn website" />
           </div>
 
           <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
