@@ -49,11 +49,11 @@ const Hero = () => {
             <div className="separator">
                 <div className="pres-sep">
                     <div className="slogan">
-                        <span className='hello-span'>Bonjour, </span>
-                        <h2 className='dev-title'> je suis <span className='underscore-title'>Développeur React</span></h2>
+                        <span className='hello-span'>Hello, </span>
+                        <h2 className='dev-title'> i am <span className='underscore-title'>a Frontend Developper</span></h2>
                     </div>
 
-                    <p className='intro-text'>Passionné par le web et le Japon. Je suis une personne curieuse, motivée et ouverte d’esprit. J’aime découvrir de nouveaux horizons et apprendre de nouvelles choses. </p>
+                    <p className='intro-text'>Passionate about the web and Japan. I'm a curious, motivated and open-minded person. I love discovering new horizons and learning new things.</p>
 
                     <div className="btn-group">
                         <a href="https://github.com/AntoineTrinite" target="_blank" rel="noreferrer">
@@ -63,7 +63,7 @@ const Hero = () => {
                             <button className='btn-rs'> Linkedin</button>
                         </a>
                         <button className='hero-contact' onClick={handleScrollToBottom}>
-                            <p className='p-hero-contact'>Contactez-moi</p>
+                            <p className='p-hero-contact'>Contact</p>
                         </button>
                     </div>
                 </div>

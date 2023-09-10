@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <>
-      <h3 className='title-h3'>Une offre ? Contactez-moi _/</h3>
+      <h3 className='title-h3'>An offer? Contact me _/</h3>
       {isFormSubmitted && (
         <div className="confirmation-message">
           Merci ! Votre message a été envoyé avec succès.
@@ -56,14 +56,14 @@ const Contact = () => {
       <div className='contact-form-all'>
         <div className="bg-grid-2"></div>
         <form className={`contact-form-part ${isFormVisible ? 'fade-in' : 'hidden'}`} ref={form} onSubmit={sendEmail}>
-          <label htmlFor="nom">Nom</label>
-          <input className="input" type="text" id="nom" name="user_name" placeholder='Nom' required /><br/>
+          <label htmlFor="nom">Name</label>
+          <input className="input" type="text" id="nom" name="user_name" placeholder='Name' required /><br/>
           <label htmlFor="email">E-mail</label>
           <input className="input" type="email" id="email" name="user_email" placeholder='Email' required /><br/>
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" rows="4" className="input" placeholder='Message' required></textarea><br/>
           <div className="submit-button-container">
-            <input id='submit' type="submit" value="Envoyer" />
+            <input id='submit' type="submit" value="Send" />
           </div>
         </form>
         <div className="contact-img-part">

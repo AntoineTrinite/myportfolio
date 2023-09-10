@@ -23,9 +23,9 @@ const Header = () => {
         <div className='head'>
             <h1 className='head-title'>Antoine Trinité</h1>
             <ul className='nav'>
-                <li className='link portable-none' onClick={handleScrollToMiddle}>Mes projets</li>
+                <li className='link portable-none' onClick={handleScrollToMiddle}>My projects</li>
                 <a className='external-link' href="https://www.linkedin.com/in/antoine-trinit%C3%A9-8a27a1159/"  target="_blank" rel="noreferrer"><li className='link'>LinkedIn</li></a>
-                <li className='link contact-me' onClick={handleScrollToBottom}>Contactez-moi</li>
+                <li className='link contact-me' onClick={handleScrollToBottom}>Contact</li>
             </ul>
         </div>
     );

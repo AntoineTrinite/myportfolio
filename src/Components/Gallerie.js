@@ -8,10 +8,10 @@ import mvg from '../img/mvg.webp';
 import hubilearn from '../img/hubilearn.webp';
 
 const Gallerie = () => {
-  const [activeCard, setActiveCard] = useState(0); // Set initial active card to 0
+  const [activeCard, setActiveCard] = useState(0);
 
   const toggleCard = (index) => {
-    setActiveCard(index === activeCard ? -1 : index); // Toggle the active state
+    setActiveCard(index === activeCard ? -1 : index);
   };
 
   return (
@@ -20,7 +20,7 @@ const Gallerie = () => {
 
       <div className="project-divider">
         <div className="description-part">
-
+          <span className='scroll-option'>Scroll down to see the web sites images</span>
           {/* Card 1 */}
           <div className={`card ${activeCard === 0 ? 'active' : ''}`} onClick={() => toggleCard(0)}>
             <div className="title-head">
@@ -37,9 +37,9 @@ const Gallerie = () => {
                 <div className="tag-card">Neon</div>
               </div>
               <p className="project-description">
-                En cours - Version 0.2<br/>
-                Création d'une plateforme d'apprentissage en ligne.<br/>
-                Mon but avec ce projet est de créer une plateforme d'apprentissage en ligne permettant d'uploader des cours, de faire des lives, de donner des exercices en ligne aux élèves sous diverses formes (mini-jeux, textes à trous, ide en ligne, ...).
+                Work in progress - Version 0.2<br/>
+                Creation of an e-learning platform.<br/>
+                My aim with this project is to create an e-learning platform that will allow me to upload lessons, do lives, and give students online exercises in various forms (mini-games, fill-in-the-blank texts, online ide, etc.).
               </p>
             </div>
           </div>
@@ -59,13 +59,13 @@ const Gallerie = () => {
                 <div className="tag-card">JS</div>
               </div>
               <p className="project-description">
-                Création d'une application web de location immobilière avec React. <br/>
-                Grâce à ce projet OpenClassrooms, j'ai pu apprendre à utiliser React. La principale difficulté a été d'apprendre à utiliser les props, les states et à gérer l'affichage dynamique avec la galerie.
+                Creation of a real estate rental web application with React.<br/>
+                Thanks to this OpenClassrooms project, I was able to learn how to use React. The main difficulty was learning how to use props, states and manage dynamic display with the gallery.
                 {/* Rest of the card content */}
               </p>
               <div className="link-access">
-                <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Code Github</a>
-                <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Accéder au site</a>
+                <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Github code</a>
+                <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Web site</a>
               </div>
             </div>
           </div>
@@ -85,12 +85,12 @@ const Gallerie = () => {
                 <div className="tag-card">Optimisation</div>
               </div>
               <p className="project-description">
-                C'est un projet d'OpenClassrooms qui m'a permis d'apprendre les bases du SEO et de l'optimisation. Ainsi que des notions de JQuery. La principale difficulté pour moi à été d'apprendre à utiliser les schémas/
+                It's an OpenClassrooms project that taught me the basics of SEO and optimization. As well as notions of JQuery. The main difficulty for me was to learn how to use schemas.
                 {/* Rest of the card content */}
               </p>
               <div className="link-access">
-                <a className='link-site' href="https://github.com/AntoineTrinite/P5-nina-carducci" target="_blank" rel="noreferrer">Code Github</a>
-                <a className='link-site' href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer">Accéder au site</a>
+                <a className='link-site' href="https://github.com/AntoineTrinite/P5-nina-carducci" target="_blank" rel="noreferrer">Github code</a>
+                <a className='link-site' href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer">Web site</a>
               </div>
             </div>
           </div>
@@ -109,12 +109,11 @@ const Gallerie = () => {
                 <div className="tag-card">MongoDB</div>
               </div>
               <p className="project-description">
-                Ce projet d'OpenClassrooms m'a permis d'apprendre à créer le backend d'un site. Le plus difficile pour moi à été d'apprendre à comprendre le fonctionnement du backend.
+                This OpenClassrooms project allowed me to learn how to create the backend of a site. The hardest part for me was learning to understand how the backend worked.
                 {/* Rest of the card content */}
               </p>
               <div className="link-access">
-                <a className='link-site' href="https://github.com/AntoineTrinite/P7-Mon-Vieux-Grimoire" target="_blank" rel="noreferrer">Code Github</a>
-                <a className='link-site' href="https://github.com/AntoineTrinite/P7-Mon-Vieux-Grimoire" target="_blank" rel="noreferrer">Accéder au site</a>
+                <a className='link-site' href="https://github.com/AntoineTrinite/P7-Mon-Vieux-Grimoire" target="_blank" rel="noreferrer">Github code</a>
               </div>
             </div>
           </div>
@@ -122,7 +121,7 @@ const Gallerie = () => {
 
         <div className="gallery-part">
           <div className={`site-card ${activeCard === 0 ? 'active' : ''}`}>
-            <span className='site-title'>Kasa</span>
+            <span className='site-title'>HUBILEARN</span>
             <a href="#" target="_blank" rel="noreferrer"><img className='site-img' src={hubilearn} alt="Hubilearn website" /></a>
           </div>
 

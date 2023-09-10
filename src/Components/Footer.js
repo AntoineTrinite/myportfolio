@@ -18,14 +18,14 @@ const Footer = () => {
             
             <div className="footer-group">
                 <ul className='footer-lists'>
-                    <li className='footer-li portable-none' onClick={handleScrollToMiddle}>Mes projets</li>
+                    <li className='footer-li portable-none' onClick={handleScrollToMiddle}>My projects</li>
                     
                     <a className='footer-link' href="https://www.linkedin.com/in/antoine-trinit%C3%A9-8a27a1159/"  target="_blank" rel="noreferrer"><li className='footer-li'>LinkedIn</li></a>
                 </ul>
                 <ul className='footer-lists'>
-                    <li>Mentions légales :<br/><br/>
-                    Antoine Trinité - Site hebergé sur GitHub <br/><br/>
-                    Ce site ne collecte pas les cookies </li>
+                    <li>Terms of use :<br/><br/>
+                    Antoine Trinité - Site hosted on GitHub <br/><br/>
+                    This website does not collect cookies. Only your email and message will be registered uppon send </li>
                 </ul>
                 
             </div>

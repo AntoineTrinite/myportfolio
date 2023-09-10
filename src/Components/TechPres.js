@@ -21,86 +21,86 @@ const TechPres = () => {
           <div className="tech-card noise">
             <span className="tech-card-title">Html/Css</span>
             <p className="tech-card-description">
-              9 Projets réalisés
+              9 Projects completed
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">Javascript</span>
             <p className="tech-card-description">
-              3 Projets réalisés
+              3 Projects completed
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">React</span>
             <p className="tech-card-description">
-              2 Projets réalisés<br/>1 projet en cours
+              2 Projects completed<br/>1 projects in progress
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">MongoDB</span>
             <p className="tech-card-description">
-              1 Projets réalisé
+              1 Projects completed
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">NodeJs</span>
             <p className="tech-card-description">
-              1 Projets réalisé
+              1 Projects completed
             </p>
           </div>
           <div className="tech-card noise">
             <span className="tech-card-title">Figma</span>
             <p className="tech-card-description">
-              2 Projets réalisé<br/>2 projet en cours
+              2 Projects completed<br/>2 projects in progress
             </p>
           </div>
         </div>
       
-      <h3 className='project-title'>Présentation _/</h3>
+      <h3 className='project-title'>Presentation _/</h3>
         <div className="presentation">
           <div className="pres-main noise">
             <div className="pres-first-part">
-              <span className='pres-title'>Qui suis-je ?</span>
+              <span className='pres-title'>Who am i ?</span>
               <p className='pres-text'>
-                Je suis passionné par le dev et le Japon. Suite à une licence en Japonais et un voyage d'un an au japon.
-                J'ai décidé de devenir développeur web dans le but de pouvoir créer des sites webs et applications en français et en japonais.
-                Mon rêve et de pouvoir aider les deux côtés à mieux se connaître et à créer des connexions entre les deux pays.
+              I'm passionate about dev and Japan. Following a degree in Japanese and a one-year trip to Japan.
+              I decided to become a web developer with the aim of creating websites and applications in French and Japanese.
+              My dream is to be able to help both sides get to know each other better and create connections between the two countries.
               </p>
-              <span className='pres-title'>Mes soft skills</span>
+              <span className='pres-title'>My soft skills</span>
                 <div className="soft-div">
                     <ul className='soft-ul'>
-                        <li className='soft-li'>Flexibilité</li>
-                        <li className='soft-li'>Autonomie</li>
+                        <li className='soft-li'>Curious</li>
+                        <li className='soft-li'>Autonomous</li>
                     </ul>
                     <ul className='soft-ul'>
-                        <li className='soft-li'>Créativité</li>
-                        <li className='soft-li'>Sens du service</li>
+                        <li className='soft-li'>Creative</li>
+                        <li className='soft-li'>flexible</li>
                     </ul>
                 </div>
             </div>
             <div className="pers-inter-part"></div>
             <div className="pres-second-part">
                 <div className="soft-div-var">
-                    <span className='pres-title-var'>Langues</span>
+                    <span className='pres-title-var'>Languages</span>
                     <ul className='centered-list'>
-                        <li>Français</li>
-                        <li>Anglais</li>
-                        <li>Japonais</li>
+                        <li>French</li>
+                        <li>English</li>
+                        <li>Japanese</li>
                     </ul>
                 </div>
                 <div className="soft-div-var">
-                    <span className='pres-title-var'>Passions</span>
+                    <span className='pres-title-var'>Hobbies</span>
                     <ul className='centered-list'>
                         <li>Sport</li>
-                        <li>Lecture</li>
-                        <li>Développer</li>
+                        <li>Reading</li>
+                        <li>develop</li>
                     </ul>
               </div>
             </div>
           </div>
           <div className="cv-download-part">
             <img className="img-download-part" src={MoiSansBg} alt="" />
-            <button className='button-download noise' onClick={handleDownload}>Télécharger mon CV</button>
+            <button className='button-download noise' onClick={handleDownload}>Download my CV</button>
           </div>
         </div>
     </div>
