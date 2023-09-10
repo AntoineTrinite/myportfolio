@@ -49,7 +49,7 @@ const Gallerie = () => {
             <div className="title-head">
               <span className='project-title-name'>Kasa</span>
               <div className='reducer'>
-                {activeCard === 0 ? '-' : '+'}
+                {activeCard === 1 ? '-' : '+'}
               </div>
             </div>
             <div className="description">
@@ -65,7 +65,7 @@ const Gallerie = () => {
               </p>
               <div className="link-access">
                 <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Github code</a>
-                <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Web site</a>
+                <a className='link-site' href="https://antoinetrinite.github.io/Kasa" target="_blank" rel="noreferrer">Web site</a>
               </div>
             </div>
           </div>
@@ -122,12 +122,12 @@ const Gallerie = () => {
         <div className="gallery-part">
           <div className={`site-card ${activeCard === 0 ? 'active' : ''}`}>
             <span className='site-title'>HUBILEARN</span>
-            <a href="#" target="_blank" rel="noreferrer"><img className='site-img' src={hubilearn} alt="Hubilearn website" /></a>
+            <img className='site-img' src={hubilearn} alt="Hubilearn website" />
           </div>
 
           <div className={`site-card ${activeCard === 1 ? 'active' : ''}`}>
             <span className='site-title'>Kasa</span>
-            <a href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
+            <a href="https://antoinetrinite.github.io/Kasa" target="_blank" rel="noreferrer"><img className='site-img' src={kasa} alt="kasa website" /></a>
           </div>
 
           <div className={`site-card ${activeCard === 2 ? 'active' : ''}`}>
