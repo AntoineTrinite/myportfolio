@@ -20,7 +20,7 @@ const Gallerie = () => {
 
       <div className="project-divider">
         <div className="description-part">
-          <span className='scroll-option'>Scroll down to see the web sites images</span>
+          <span className='scroll-option'>Scroll down to see the websites images</span>
           {/* Card 1 */}
           <div className={`card ${activeCard === 0 ? 'active' : ''}`} onClick={() => toggleCard(0)}>
             <div className="title-head">
@@ -36,13 +36,13 @@ const Gallerie = () => {
                 <div className="tag-card">JS</div>
               </div>
               <p className="project-description">
-                Creation of a real estate rental web application with React.<br/>
+                Creation of a real estate rental web application with React.<br />
                 Thanks to this OpenClassrooms project, I was able to learn how to use React. The main difficulty was learning how to use props, states and manage dynamic display with the gallery.
                 {/* Rest of the card content */}
               </p>
               <div className="link-access">
                 <a className='link-site' href="https://github.com/AntoineTrinite/Kasa" target="_blank" rel="noreferrer">Github code</a>
-                <a className='link-site' href="https://antoinetrinite.github.io/Kasa/" target="_blank" rel="noreferrer">Web site</a>
+                <a className='link-site' href="https://antoinetrinite.github.io/Kasa/" target="_blank" rel="noreferrer">Website</a>
               </div>
             </div>
           </div>
@@ -57,16 +57,20 @@ const Gallerie = () => {
             </div>
             <div className="description">
               <div className="tags">
-                <div className="tag-card">NextJs</div>
-                <div className="tag-card">OAuth</div>
-                <div className="tag-card">Prisma</div>
-                <div className="tag-card">Neon</div>
+                <div className="tag-card">Laravel</div>
+                <div className="tag-card">MySQL</div>
+                <div className="tag-card">Javascript</div>
+                <div className="tag-card">HTML/CSS</div>
               </div>
               <p className="project-description">
-                Work in progress - Version 0.2<br/>
-                Creation of an e-learning platform.<br/>
+                Work in progress - Version 0.2<br />
+                Creation of an e-learning platform with multiple type of exercises.<br />
                 My aim with this project is to create an e-learning platform that will allow me to upload lessons, do lives, and give students online exercises in various forms (mini-games, fill-in-the-blank texts, online ide, etc.).
               </p>
+              <div className="link-access">
+                <a className='link-site' href="https://github.com/AntoineTrinite/Hubilearn" target="_blank" rel="noreferrer">Github code</a>
+                <a className='link-site' href="#" target="_blank" rel="noreferrer">Website (soon)</a>
+              </div>
             </div>
           </div>
 
@@ -90,7 +94,7 @@ const Gallerie = () => {
               </p>
               <div className="link-access">
                 <a className='link-site' href="https://github.com/AntoineTrinite/P5-nina-carducci" target="_blank" rel="noreferrer">Github code</a>
-                <a className='link-site' href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer">Web site</a>
+                <a className='link-site' href="https://antoinetrinite.github.io/P5-nina-carducci/" target="_blank" rel="noreferrer">Website</a>
               </div>
             </div>
           </div>

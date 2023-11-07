@@ -50,10 +50,10 @@ const Hero = () => {
                 <div className="pres-sep">
                     <div className="slogan">
                         <span className='hello-span'>Hello, </span>
-                        <h2 className='dev-title'> i am <span className='underscore-title'>a Frontend Developper</span></h2>
+                        <h2 className='dev-title'> i am <span className='underscore-title'>a Developper</span></h2>
                     </div>
 
-                    <p className='intro-text'>Passionate about the web and Japan. I'm a curious, motivated and open-minded person. I love discovering new horizons and learning new things.</p>
+                    <p className='intro-text'>Passionate about Japan, web and software developement. I'm a curious, motivated and open-minded person. I love discovering new horizons and learning new things.</p>
 
                     <div className="btn-group">
                         <a href="https://github.com/AntoineTrinite" target="_blank" rel="noreferrer">
